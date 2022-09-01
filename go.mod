@@ -1,3 +1,3 @@
-module wizzie.io/greetings
+module wizzie.io/golinuxcloud
 
 go 1.18

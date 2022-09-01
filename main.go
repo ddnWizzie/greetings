@@ -1,17 +1,14 @@
 package main
 
 import (
-	"golinuxcloud/greeting"
 	"log"
-	"os"
+
+	greeting "wizzie.io/golinuxcloud/greetings"
 )
 
 func main() {
-	value := os.Args[1]
-	res, err := greeting.Greeting(value)
-	if err != nil {
-		log.Println(err)
-		os.Exit(0)
-	}
+	name := "Dayana"
+	res := greeting.Hello(name)
+
 	log.Println(res)
 }
